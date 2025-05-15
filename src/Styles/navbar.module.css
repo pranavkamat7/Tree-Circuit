@@ -1,0 +1,16 @@
+.main_navbar{
+    position: sticky;
+  top: 0; /* VERY important */
+  z-index: 999; /* Keeps it above other content */
+  width: 100%;
+  background-color: transparent; /* semi-transparent for blur to show */
+  backdrop-filter: blur(10px); /* Applies blur effect to what's behind */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+.wrapper_div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}

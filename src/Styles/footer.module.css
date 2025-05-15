@@ -1,0 +1,36 @@
+.Footer{
+    width: 100%;
+    background-color: black;
+}
+
+.main_Footer{
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.footer_quick_links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer_quick_links_header{
+    width: 100%;
+    font-size: 20px;
+    color: white;
+    text-align: start;
+}
+
+.quick_links{
+    width: 100%;
+    font-size: 20px;
+    color: white;
+    text-align: start;
+    text-decoration: none;
+}
+

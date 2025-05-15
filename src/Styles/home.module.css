@@ -1,0 +1,109 @@
+.slider_image{
+    object-fit: cover;
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    width: 100%;
+    height: 100vh;
+}
+
+.for_spacing{
+    padding-top: 0px;
+    padding-bottom: 80px;
+}
+
+.carousal_caption_slide1{
+    text-align: start;
+    /* background-color: rgb(152, 148, 148); */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.icons :global(.carousel-control-next-icon){
+  background-color: black;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.carousal_caption_slide2{
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Slider header */
+.slider_header{
+    font-size: 60px;
+    font-weight: 600;
+    text-shadow:  4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* slider para */
+.slider_para1{
+    font-size: 40px;
+    font-weight: 500;
+    width: 40%;
+    text-shadow:  4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+.slider_para2{
+    font-size: 40px;
+    font-weight: 500;
+    width: 70%;
+    text-shadow:  4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Section2 */
+.section2_parent{
+    background: linear-gradient(to right, #f8a1d1, #fccb90);
+    border-radius: 8px;
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.section2_child{
+    width: 100%;
+    padding: 30px;
+    background-color: rgb(8, 230, 246);
+    box-shadow: 4px 4px 12px rgba(56, 62, 62, 0.8);
+    border-radius: 8px;
+}
+
+.section2_title {
+  width: fit-content;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #fff;
+  font-family: 'Dancing Script', cursive; /* or your chosen font */
+  font-size: 1.5rem;
+  color: #fff;
+  animation: typing 5s steps(70, end), blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  .section2_parent{
+    padding: 10px;
+  }
+
+  .section2_child{
+    padding: 10px;
+  }
+}
+
