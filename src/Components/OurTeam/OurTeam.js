@@ -24,7 +24,7 @@ const teamMembers = [
     },
     {
         name: "Digvesh Parab",
-        title: "Software Development Engineer II",
+        title: "Development & Relation Head",
         image: "/Images/homeImages/sde2.jpg",
     },
     {
