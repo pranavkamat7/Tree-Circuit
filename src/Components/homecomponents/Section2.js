@@ -7,7 +7,7 @@ function Section2() {
     <Container>
     <div className={styles.section2_parent}>
         <div className={styles.section2_child}>
-      <h3 className={styles.section2_title}>"Great development builds the bridge, but it’s brilliant marketing that brings the world across."</h3>
+      <h2 className={styles.section2_title}>"Great development builds the bridge, but it’s brilliant marketing that brings the world across."</h2>
       </div>
     </div>
     </Container>

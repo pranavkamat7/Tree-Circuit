@@ -1,28 +1,60 @@
-import React from 'react'
-import styles from '../../Styles/home.module.css'
-import img1 from '../../Images/homeImages/Development.png'
-import img2 from '../../Images/homeImages/Digital Marketing.jpg'
-import { Carousel } from 'react-bootstrap'
+import React from 'react';
+import styles from '../../Styles/home.module.css';
+import { Carousel } from 'react-bootstrap';
+
+import pic1 from '../../Images/homeImages/pic1.jpg';
+import pic2 from '../../Images/homeImages/pic2.jpg';
+import pic3 from '../../Images/homeImages/pic3.jpg';
+
 function Section1() {
   return (
-     <Carousel fade interval={3000}>
-      <Carousel.Item>
-        <img src={img1}  alt='Webdevelopment' className={styles.slider_image}/>
-        <Carousel.Caption className={styles.carousal_caption_slide1}>
-          {/* <h3 className={styles.slider_header}>Web Development</h3> */}
-          <p className={styles.slider_para1}>We craft stunning websites that not only look great but drive real results.</p>
-         
-        </Carousel.Caption>
+<Carousel pause={false}>
+      <Carousel.Item interval={3000}>
+        <div className={styles.split_slide_container}>
+          <div className={styles.text_section}>
+            <h1>Empowering Brands with</h1>
+            <h2>Digital Marketing & Software Solutions</h2>
+            <p>
+              We craft engaging strategies and cutting-edge technologies that drive real business growth.
+            </p>
+          </div>
+          <div className={styles.video_section}>
+            <img src={pic1} alt='Slide 1' className={styles.slider_image} />
+          </div>
+        </div>
       </Carousel.Item>
-      <Carousel.Item>
-        <img src={img2}  alt='Webdevelopment' className={styles.slider_image}/>
-        <Carousel.Caption className={styles.carousal_caption_slide2}>
-          {/* <h3 className={styles.slider_header}>Digital Marketing</h3> */}
-           <p className={styles.slider_para2}>Our digital marketing strategies boost your online presence and connect you with the right audience.</p>
-        </Carousel.Caption>
+
+      <Carousel.Item interval={3000}>
+        <div className={styles.split_slide_container}>
+          <div className={styles.text_section}>
+            <h1>Innovative Design Meets</h1>
+            <h2>Scalable Technology</h2>
+            <p>
+              Our team transforms ideas into beautifully engineered digital products.
+            </p>
+          </div>
+          <div className={styles.video_section}>
+            <img src={pic2} alt='Slide 2' className={styles.slider_image} />
+          </div>
+        </div>
+      </Carousel.Item>
+
+      <Carousel.Item interval={3000}>
+        <div className={styles.split_slide_container}>
+          <div className={styles.text_section}>
+            <h1>Your Vision,</h1>
+            <h2>Our Execution</h2>
+            <p>
+              We partner with you every step of the way to ensure your brand excels online.
+            </p>
+          </div>
+          <div className={styles.video_section}>
+            <img src={pic3} alt='Slide 3' className={styles.slider_image} />
+          </div>
+        </div>
       </Carousel.Item>
     </Carousel>
-  )
+  );
 }
 
-export default Section1
+export default Section1;

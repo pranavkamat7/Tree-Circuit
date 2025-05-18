@@ -107,3 +107,167 @@
   }
 }
 
+.section2_parent {
+  background: #2A7B9B;
+  background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%);
+  border-radius: 8px;
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.section2_child {
+  width: 100%;
+  max-width: 1000px;
+  padding: 30px;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 4px 4px 12px rgba(56, 62, 62, 0.8);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.section2_title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.3rem;
+  color: #fff;
+  animation: typing 5s steps(70, end), blink 0.75s step-end infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #fff;
+  margin: 0 auto;
+}
+
+/* Typing animations */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Breakpoints */
+@media (max-width: 992px) {
+  .section2_parent {
+    padding: 50px 20px;
+  }
+  .section2_title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section2_title {
+    font-size: 1.6rem;
+    white-space: normal;
+    border: none;
+    animation: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .section2_child {
+    padding: 15px;
+  }
+  .section2_title {
+    font-size: 1.3rem;
+  }
+}
+
+
+.slider_image {
+  width: 100%;
+  max-height: 500px; /* Set the max height you want */
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .slider_image {
+    max-height: 300px; /* Lower height for small screens */
+  }
+}
+
+
+.split_slide_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 80vh; /* or 100vh depending on your design */
+  background-color: #f9f9f9;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.text_section {
+  flex: 1;
+  padding: 2rem;
+  color: #222;
+}
+
+.text_section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.text_section h2 {
+  font-size: 1.75rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.text_section p {
+  font-size: 1rem;
+  color: #777;
+}
+
+.video_section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider_video {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .split_slide_container {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    
+  }
+
+  .text_section, .video_section {
+    padding: 1rem;
+  }
+
+  .text_section h1 {
+    font-size: 2rem;
+  }
+
+  .text_section h2 {
+    font-size: 1.25rem;
+  }
+
+  .slider_video {
+    max-width: 100%;
+  }
+}
+
+

@@ -7,6 +7,8 @@
   backdrop-filter: blur(10px); /* Applies blur effect to what's behind */
   -webkit-backdrop-filter: blur(10px); /* Safari support */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  background: #2A7B9B;
+  background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%);
 }
 
 .wrapper_div{
